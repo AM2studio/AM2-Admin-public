@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+	<meta charset="UTF-8">
+	<title>GreenRush</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<div id="main">
+		<!-- HEADER -->
+		<div class="header clearfix">
+			<div class="header-table">
+				<div class="header-cell is-left">
+					<div class="header__logo">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="logo">
+						</a> <span>admin v 1.08</span>
+					</div>
+				</div>
+				<div class="header-cell">
+					<div class="clearfix">
+						<!-- PROFILE -->
+						<div class="profile-top">
+							<div class="cell">
+								<div class="img-wrapper">
+									<img src="" alt="" />
+								</div>
+							</div>
+							<div class="cell">
+								<span class="username">Username</span>
+								<ul class="user-options">
+									<li><a href="#" class="profile-icon">Profile</a></li>
+									<li><a href="#" class="logout-icon">Logout</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- SEARCH -->
+						<div class="search-top">
+							<div class="cell">
+								<form class="top-search">
+									<input type="search" />
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR -->
+		<div class="sidebar-menu">
+			<a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+			<ul class="menu">
+				<li>
+					<a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="has_submenu active">
+					<a href="#"><i class="fa fa-user"></i><span>Users</span></a>
+					<ul class="submenu">
+						<li><a href="#">Signup only <mark>1743</mark></a></li>
+						<li><a href="#">Submited Verification <mark>10</mark></a></li>
+						<li><a href="#">Verified Users <mark>4465</mark></a></li>
+						<li class="active"><a href="#">Expired <mark>46</mark></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hospital-o"></i><span>Orders</span> <mark class="bg">123</mark></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar"></i><span>Dispensaries</span></a>
+				</li>
+				<li class="has_submenu">
+					<a href="#"><i class="fa fa-cube"></i><span>Products</span></a>
+					<ul class="submenu">
+						<li><a href="#">Submited Verification</a></li>
+						<li><a href="#">Verified Users</a></li>
+						<li><a href="index.html">Expired</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-folder"></i><span>Pages</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-tag"></i><span>Promo codes</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- CONTENT -->
+		<div class="main">
+			<div class="container clearfix">
+				<!-- CONTENT HEADER -->
+				<div class="layout context--pageheader">
+					<div class="container clearfix">
+						<div class="col-12 break-big">
+							<h1>Users - Joe Green Travolta</h1>
+							<button class="btn"><i class="fa fa-exchange"></i>&nbsp; Login As User</button>
+						</div>
+						<div class="col-12 break-big no-margin">
+							<ul class="breadcrumbs">
+								<li><a href="#">Admin</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Edit Product</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- PRODUCT INFORMATION -->
+				<div class="clearfix">
+					<div class="col-12 break-big">
+						<!-- USER INFORMATION -->
+						<div class="card-wrapper">
+							<h3 class="card-header">User information</h3>
+							<div class="card-inner">
+								<div class="card-table">
+									<div class="card-table-row">
+										<span class="card-table-cell">Email</span>
+										<div class="card-table-cell">
+											<form class="card-form no-inline-edit">
+												<fieldset>
+													<input type="text" value="joe.greentra@gmail.com" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">First name</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset class="no-inline-edit">
+													<input type="text" value="Joe Green" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Last name</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="Travolta" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Group</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="User" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Gender</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="Male" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Birthday</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="Feb 21, 1977" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Phone</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="555-432-101" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">is banned from site</span>
+										<div class="card-table-cell">
+											<form class="form">
+												<fieldset class="checkbox-toggle">
+													<input type="checkbox" id="checkbox01" />
+													<label for="checkbox01"></label>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Subscribed to newsletter</span>
+										<div class="card-table-cell">
+											<form class="form">
+												<fieldset class="checkbox-toggle">
+													<input type="checkbox" id="checkbox02" checked />
+													<label for="checkbox02"></label>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Subscribed to special offers</span>
+										<div class="card-table-cell">
+											<form class="form">
+												<fieldset class="checkbox-toggle">
+													<input type="checkbox" id="checkbox03" />
+													<label for="checkbox03"></label>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Subscribed to all dispensaries</span>
+										<div class="card-table-cell">
+											<form class="form">
+												<fieldset class="checkbox-toggle">
+													<input type="checkbox" id="checkbox04" checked />
+													<label for="checkbox04"></label>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer clearfix">
+								<a href="#" class="left btn btn--primary">Submit</a>
+								<button class="right btn btn--secondary">Reset</button>
+							</div>
+						</div>
+						<!-- VERIFICATION -->
+						<div class="card-wrapper">
+							<h3 class="card-header">Verification</h3>
+							<div class="card-inner">
+								<div class="card-table">
+									<div class="card-table-row">
+										<span class="card-table-cell">Verification status</span>
+										<div class="card-table-cell">
+											<form class="form">
+												<small class="badge badge--success">Verified</small>
+												<fieldset class="checkbox-toggle inline-block">
+													<input type="checkbox" id="checkbox05" checked />
+													<label for="checkbox05"></label>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Reason(s) for Rejection</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Upload verification confirmation</span>
+										<div class="card-table-cell">
+											<div class="card-inner-block">
+												<button class="btn is-smaller"><i class="fa fa-eye"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Has accepted member agreement</span>
+										<div class="card-table-cell">
+											<form class="form">
+												<fieldset class="checkbox-toggle">
+													<input type="checkbox" id="checkbox06" checked />
+													<label for="checkbox06"></label>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer clearfix">
+								<a href="#" class="left btn btn--primary">Submit</a>
+								<button class="right btn btn--secondary">Reset</button>
+							</div>
+						</div>
+					</div>
+					<!-- DOCUMENTS -->
+					<div class="col-12 break-big no-margin">
+						<div class="card-wrapper">
+							<h3 class="card-header">Documents</h3>
+							<div class="card-inner">
+								<div class="card-table">
+									<div class="card-table-row">
+										<span class="card-table-cell">Driver's License or ID #</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Driver's License or ID Expiration Date</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="Feb 21, 2017" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Upload driver's or state ID</span>
+										<div class="card-table-cell">
+											<div class="card-inner-block">
+												<!-- TODO: TOOLTIP -->
+												<button data-fancybox data-fancybox-href="http://cache.lego.com/r/catalogs/-/media/catalogs/characters/dc/mugshots/mugshot%202016/76046_batman_720x960.png" data-js="tooltip-example" title='<img src="http://cache.lego.com/r/catalogs/-/media/catalogs/characters/dc/mugshots/mugshot%202016/76046_batman_720x960.png?l.r2=108172187" alt="" />' class="btn is-smaller"><i class="fa fa-eye"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Patient ID #</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">State of verification</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="CA" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Patient ID expiration daten</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="Feb 21, 2017" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Doctor's name</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Doctor's phone</span>
+										<div class="card-table-cell">
+											<form class="card-form">
+												<fieldset>
+													<input type="text" value="" />
+													<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+													<i class="fieldset-overlay" data-js="focus-on-field"></i>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Upload proof of residence</span>
+										<div class="card-table-cell">
+											<div class="card-inner-block">
+												<button data-js="tooltip-example" title='<img src="http://cache.lego.com/r/catalogs/-/media/catalogs/characters/dc/mugshots/mugshot%202016/76046_batman_720x960.png?l.r2=108172187" alt="" />' class="btn is-smaller"><i class="fa fa-eye"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="card-table-row">
+										<span class="card-table-cell">Upload driver's or state ID</span>
+										<div class="card-table-cell">
+											<div class="card-inner-block">
+												<button data-js="tooltip-example" title='<img src="http://cache.lego.com/r/catalogs/-/media/catalogs/characters/dc/mugshots/mugshot%202016/76046_batman_720x960.png?l.r2=108172187" alt="" />' class="btn is-smaller"><i class="fa fa-eye"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel-highlight">
+									<div class="card-table">
+										<div class="card-table-row">
+											<span class="card-table-cell">First card-table-cell :head</span>
+											<div class="card-table-cell">some</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell">content left</span>
+											<div class="card-table-cell">content right</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell">content left</span>
+											<div class="card-table-cell">content right</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="card-footer clearfix">
+								<a href="#" class="left btn btn--primary">Submit</a>
+								<button class="right btn btn--secondary">Reset</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ORDER HISTORY -->
+				<div class="clearfix">
+					<div class="col-1">
+						<div class="card-wrapper">
+							<h3 class="card-header">Order History</h3>
+							<div class="card-inner">
+								<table class="card-table js-responsive-table">
+									<thead>
+										<tr>
+											<th>Order #</th>
+											<th>Date</th>
+											<th>Dispensary</th>
+											<th>Ordered by</th>
+											<th>Status</th>
+											<th>Total</th>
+											<th>Fulfilment Type</th>
+											<th>Payment Method</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="#">3647</a></td>
+											<td>02/01/16</td>
+											<td><a href="#">GreenLantern</a></td>
+											<td><a href="#">Joe Green Travolta</a></td>
+											<td>Complete</td>
+											<td>$100</td>
+											<td>Delivery</td>
+											<td>Cash</td>
+											<td>
+												<div class="card-inner-block">
+													<button class="btn is-smaller"><i class="fa fa-eye"></i></button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/functions.js"></script>
+	<!-- TOOLTIP -->
+	<script>
+		$(document).ready(function () {
+
+			// https://github.com/iamceege/tooltipster
+			$('[data-js="tooltip-example"]').tooltipster({
+				contentAsHTML: true,
+				arrow: false,
+				maxWidth: 300,
+				positionTracker: true
+			});
+
+			// http://fancyapps.com/fancybox/#examples
+			var additional_template = '<div class="fancybox-additional-options"><a class="close-fancybox btn btn--noborder"><i class="fa fa-close"></i></a><a class="btn"><i class="fa fa-expand"></i></a><a class="btn"><i class="fa fa-repeat"></i></a><a class="btn"><i class="fa fa-undo"></i></a><a class="btn btn--secondary"><i class="fa fa-trash"></i></a></div>';
+			$('[data-fancybox]').fancybox({
+				padding: 5,
+				closeBtn: false,
+				tpl: {
+					wrap: '<div class="fancybox-wrap" tabIndex="-1">' + additional_template + '<div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>'
+				}
+			});
+
+			$(document).on('click', '.close-fancybox', function() {
+				$.fancybox.close();
+			});
+
+		});
+	</script>
+</body>
+</html>

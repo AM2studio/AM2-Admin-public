@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+	<meta charset="UTF-8">
+	<title>GreenRush</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<div id="main">
+		<!-- HEADER -->
+		<div class="header clearfix">
+			<div class="header-table">
+				<div class="header-cell is-left">
+					<div class="header__logo">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="logo">
+						</a> <span>admin v 1.08</span>
+					</div>
+				</div>
+				<div class="header-cell">
+					<div class="clearfix">
+						<!-- PROFILE -->
+						<div class="profile-top">
+							<div class="cell">
+								<div class="img-wrapper">
+									<img src="" alt="" />
+								</div>
+							</div>
+							<div class="cell">
+								<span class="username">Username</span>
+								<ul class="user-options">
+									<li><a href="#" class="profile-icon">Profile</a></li>
+									<li><a href="#" class="logout-icon">Logout</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- SEARCH -->
+						<div class="search-top">
+							<div class="cell">
+								<form class="top-search">
+									<input type="search" />
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR -->
+		<div class="sidebar-menu">
+			<a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+			<ul class="menu">
+				<li>
+					<a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="has_submenu active">
+					<a href="#"><i class="fa fa-user"></i><span>Users</span></a>
+					<ul class="submenu">
+						<li><a href="#">Signup only <mark>1743</mark></a></li>
+						<li><a href="#">Submited Verification <mark>10</mark></a></li>
+						<li><a href="#">Verified Users <mark>4465</mark></a></li>
+						<li class="active"><a href="#">Expired <mark>46</mark></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hospital-o"></i><span>Orders</span> <mark class="bg">123</mark></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar"></i><span>Dispensaries</span></a>
+				</li>
+				<li class="has_submenu">
+					<a href="#"><i class="fa fa-cube"></i><span>Products</span></a>
+					<ul class="submenu">
+						<li><a href="#">Submited Verification</a></li>
+						<li><a href="#">Verified Users</a></li>
+						<li><a href="index.html">Expired</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-folder"></i><span>Pages</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-tag"></i><span>Promo codes</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- CONTENT -->
+		<div class="main">
+			<div class="container clearfix">
+				<!-- CONTENT HEADER -->
+				<div class="layout context--pageheader">
+					<div class="container clearfix">
+						<div class="col-12 break-big">
+							<h1>(H1) Lorem Ipsum Dolor Sit Amet </h1>
+						</div>
+						<div class="col-12 break-big no-margin">
+							<ul class="breadcrumbs">
+								<li><a href="#">Admin</a></li>
+								<li><a href="#">Directory</a></li>
+								<li><a href="#">Page</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- TABS HEADER -->
+				<div class="layout context--tabsheader">
+					<div class="container clearfix">
+						<!-- CUSTOM TABS -->
+						<div data-js="count-tab-no" class="js-tabs-header">
+							<div class="js-tabs-cell is-active">
+								<i class="js-tabs-header-line"></i>
+								<a data-js="js-tab" data-tab="#tab01" class="js-tab-link"><i>1</i> <small>Lorem ipsum</small></a>
+							</div>
+							<div class="js-tabs-cell">
+								<a data-js="js-tab" data-tab="#tab02" class="js-tab-link"><i>2</i> <small>Lorem ipsum</small></a>
+							</div>
+							<div class="js-tabs-cell is-disabled">
+								<a data-js="js-tab" data-tab="#tab03" class="js-tab-link"><i>3</i> <small>Skip this</small></a>
+							</div>
+							<div class="js-tabs-cell">
+								<a data-js="js-tab" data-tab="#tab04" class="js-tab-link"><i>4</i> <small>Tab 4</small></a>
+							</div>
+						</div>
+						<!-- SELECT2 (FOR MOBILE) -->
+						<div class="js-tabs-select2">
+							<fieldset class="select-dropdown-wrapper" style="width: 100%;">
+								<select data-js="js-tab-select2">
+									<option value="#tab01">Lorem ipsum 1</option>
+									<option value="#tab02">Lorem ipsum 2</option>
+									<option value="#tab03" disabled>Skip this</option>
+									<option value="#tab04">Tab 4</option>
+								</select>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+				<!-- TAB 01 -->
+				<div id="tab01" class="js-tab is-active">
+					<!-- FORMS -->
+					<div class="clearfix">
+						<!-- BILLING ADDRESS -->
+						<div class="col-12 break-big">
+							<div class="card-wrapper">
+								<h3 class="card-header">Billing address</h3>
+								<div class="card-inner">
+									<div class="card-table">
+										<!-- ADDRESS LINE 1 -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Address Line 1</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="C/O Carol Wilson" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- ADDRESS LINE 2 -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Address Line 2</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="506-10 Rennaissance SQ" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- ADDRESS LINE 3 -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Address Line 3</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="New Westminster BC" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- CITY -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">City</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- ZIP -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">ZIP</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="V3M7B1" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- STATE -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">State</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- COUNTRT -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Country</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SHIPPING ADDRESS -->
+						<div class="col-12 break-big no-margin">
+							<div class="card-wrapper">
+								<h3 class="card-header">Shipping address</h3>
+								<div class="card-inner">
+									<div class="card-table">
+										<!-- ADDRESS LINE 1 -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Address Line 1</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="C/O Carol Wilson" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- ADDRESS LINE 2 -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Address Line 2</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="506-10 Rennaissance SQ" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- ADDRESS LINE 3 -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Address Line 3</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="New Westminster BC" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- CITY -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">City</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- ZIP -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">ZIP</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="V3M7B1" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- STATE -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">State</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- COUNTRT -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Country</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix">
+						<!-- QUOTE TYPE -->
+						<div class="col-12 break-big">
+							<div class="card-wrapper">
+								<h3 class="card-header">Quote Type</h3>
+								<div class="card-inner">
+									<div class="card-table">
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Quote Type</span>
+											<div class="card-table-cell">
+												<fieldset class="select-dropdown-wrapper" style="width: 100%;">
+													<select data-js="select">
+														<option>SDSI</option>
+														<option>SDSI 1</option>
+														<option>SDSI 2</option>
+														<option>SDSI 3</option>
+													</select>
+												</fieldset>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SDSI -->
+						<div class="col-12 break-big">
+							<div class="card-wrapper">
+								<h3 class="card-header">SDSI</h3>
+								<div class="card-inner">
+									<div class="card-table">
+										<!-- MSA CONTRACT -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">MSA Contract #</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<!-- PHN -->
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">PHN</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit">
+															<i class="fa fa-check"></i>
+														</button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TAB 02 -->
+				<div id="tab02" class="js-tab">
+					tab 02
+				</div>
+				<!-- TAB 03 -->
+				<div id="tab03" class="js-tab">
+					tab 03
+				</div>
+				<!-- TAB 04 -->
+				<div id="tab04" class="js-tab">
+					tab 04
+				</div>
+				<!-- TABS FOOTER -->
+				<div class="layout context--tabsfooter">
+					<div class="container clearfix">
+						<div class="js-tabs-footer">
+							<div class="clearfix">
+								<div class="col-12 break-xs">
+									<div class="clearfix">
+										<button data-js="js-tab-prev" class="btn btn--primary btn-js-left">Previous</button>
+										<button data-js="js-tab-next" class="btn btn--transparent btn-js-right">Next</button>
+									</div>
+								</div>
+								<div class="col-12 break-xs no-margin text-right">
+									<button class="btn btn--primary btn-js-full">Finish</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>

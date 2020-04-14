@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+	<meta charset="UTF-8">
+	<title>GreenRush</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<div id="main">
+		<!-- HEADER -->
+		<div class="header clearfix">
+			<div class="header-table">
+				<div class="header-cell is-left">
+					<div class="header__logo">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="logo">
+						</a> <span>admin v 1.08</span>
+					</div>
+				</div>
+				<div class="header-cell">
+					<div class="clearfix">
+						<!-- PROFILE -->
+						<div class="profile-top">
+							<div class="cell">
+								<div class="img-wrapper">
+									<img src="" alt="" />
+								</div>
+							</div>
+							<div class="cell">
+								<span class="username">Username</span>
+								<ul class="user-options">
+									<li><a href="#" class="profile-icon">Profile</a></li>
+									<li><a href="#" class="logout-icon">Logout</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- SEARCH -->
+						<div class="search-top">
+							<div class="cell">
+								<form class="top-search">
+									<input type="search" />
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR -->
+		<div class="sidebar-menu">
+			<a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+			<ul class="menu">
+				<li>
+					<a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="has_submenu active">
+					<a href="#"><i class="fa fa-user"></i><span>Users</span></a>
+					<ul class="submenu">
+						<li><a href="#">Signup only <mark>1743</mark></a></li>
+						<li><a href="#">Submited Verification <mark>10</mark></a></li>
+						<li><a href="#">Verified Users <mark>4465</mark></a></li>
+						<li class="active"><a href="#">Expired <mark>46</mark></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hospital-o"></i><span>Orders</span> <mark class="bg">123</mark></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar"></i><span>Dispensaries</span></a>
+				</li>
+				<li class="has_submenu">
+					<a href="#"><i class="fa fa-cube"></i><span>Products</span></a>
+					<ul class="submenu">
+						<li><a href="#">Submited Verification</a></li>
+						<li><a href="#">Verified Users</a></li>
+						<li><a href="index.html">Expired</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-folder"></i><span>Pages</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-tag"></i><span>Promo codes</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- CONTENT -->
+		<div class="main">
+			<div class="container clearfix">
+				<!-- CONTENT HEADER -->
+				<div class="layout context--pageheader">
+					<div class="container clearfix">
+						<div class="col-12 break-big">
+							<h1>Event plan and report</h1>
+						</div>
+					</div>
+				</div>
+				<!-- TABS HEADER -->
+				<div class="layout context--tabsheader">
+					<div class="container clearfix">
+						<div class="js-tabs-header">
+							<div class="js-tabs-cell is-active">
+								<i class="js-tabs-header-line"></i>
+								<a data-js="js-tab" data-tab="#tab01" class="js-tab-link"><i>1</i> <small>Pre-crawl huddle</small></a>
+							</div>
+							<div class="js-tabs-cell">
+								<a data-js="js-tab" data-tab="#tab02" class="js-tab-link"><i>2</i> <small>Attendance</small></a>
+							</div>
+							<div class="js-tabs-cell">
+								<a data-js="js-tab" data-tab="#tab03" class="js-tab-link"><i>3</i> <small>Report</small></a>
+							</div>
+							<div class="js-tabs-cell is-disabled">
+								<a data-js="js-tab" data-tab="#tab04" class="js-tab-link"><i>4</i> <small>Notes</small></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TAB 01 -->
+				<div id="tab01" class="js-tab is-active">
+                    <div class="layout context--formfilters">
+                        <div class="container clearfix">
+                            <div class="col-1">
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <!-- DROPDOWN -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Day</span>
+                                                <div class="card-table-cell">
+                                                    <fieldset class="select-dropdown-wrapper" style="width: 100%;">
+                                                        <select data-js="select">
+                                                            <option>Monday</option>
+                                                            <option>Tuesday</option>
+                                                            <option>Wednesday</option>
+                                                            <option>Thurdsday</option>
+                                                            <option>Friday</option>
+                                                            <option>Saturday</option>
+                                                            <option>Sunday</option>
+                                                        </select>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <!-- DATEPICKER -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Date</span>
+                                                <div class="card-table-cell">
+                                                    <form class="form">
+                                                        <fieldset>
+                                                            <input data-js="datepicker" type="text" value="2016-03-15" class="input-datepicker" />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- DROPDOWN -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Week</span>
+                                                <div class="card-table-cell">
+                                                    <fieldset class="select-dropdown-wrapper" style="width: 100%;">
+                                                        <select data-js="select">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Initial</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="Default value" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <h3 class="card-header">Schedule</h3>
+                                <table class="table css-responsive-table repeater">
+                                    <thead>
+                                        <tr>
+                                            <th><span>Venue</span></th>
+                                            <th><span>Time</span></th>
+                                            <th><span>Travel</span></th>
+                                            <th><span>Custom select</span></th>
+                                            <th><span>Actions</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-repeater-list="schedule-list">
+                                    <tr data-repeater-item>
+                                        <td data-name="Venue">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Time">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Travel">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Custom select">
+                                            <form class="card-form">
+                                                <fieldset class="select-dropdown-wrapper" style="width: 100%;">
+                                                    <select data-js="select-with-search">
+                                                        <option>Dropdown option 1</option>
+                                                        <option>Dropdown option 2</option>
+                                                        <option>Dropdown option 3</option>
+                                                        <option>Dropdown option 4</option>
+                                                        <option>Dropdown option 5</option>
+                                                        <option>Dropdown option 6</option>
+                                                        <option>Dropdown option 7</option>
+                                                        <option>Dropdown option 8</option>
+                                                        <option>Dropdown option 9</option>
+                                                        <option>Dropdown option 10</option>
+                                                    </select>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Actions" class="fixed95">
+                                            <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tr style="display: none">
+                                        <td>
+                                            <input data-repeater-create type="hidden" value="Add"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-1">
+                                <h3 class="card-header">Staff</h3>
+                                <table class="table css-responsive-table repeater">
+                                    <thead>
+                                        <tr>
+                                            <th><span>Name</span></th>
+                                            <th><span>Position</span></th>
+                                            <th><span>Start time</span></th>
+                                            <th><span>Stop time</span></th>
+                                            <th><span>Total Hrs.</span></th>
+                                            <th><span>Rate ($/hr)</span></th>
+                                            <th><span>Total ($)</span></th>
+                                            <th><span>Actions</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody data-repeater-list="staff-list">
+                                    <tr data-repeater-item data-staff-row>
+                                        <td data-name="Name">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Position">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Start time">
+                                            <form class="form">
+                                                <fieldset>
+                                                    <input data-js="clockpicker" type="text" class="input-datepicker" placeholder="00:00" value="" />
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Stop time">
+                                            <form class="form">
+                                                <fieldset>
+                                                    <input data-js="clockpicker" type="text" class="input-datepicker" placeholder="00:00" value="" />
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Total Hrs.">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="0" data-staff-hours />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Rate ($/hr)">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="0" data-staff-rate />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Total ($)">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" disabled value="0" data-staff-total />
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Actions" class="fixed95">
+                                            <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tr style="display: none">
+                                        <td>
+                                            <input data-repeater-create type="hidden" value="Add"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-1">
+                                <div class="col-12 right no-margin break-big">
+                                    <div class="card-wrapper">
+                                        <div class="card-inner">
+                                            <div class="card-table">
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Staff total ($)</span>
+                                                    <div class="card-table-cell">
+                                                        <form class="card-form">
+                                                            <fieldset>
+                                                                <input type="text" disabled value="0" data-staff-final-total />
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <h3 class="card-header">Plan of action</h3>
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Expecting</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="Default value" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Outside</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="Default value" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Camera</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="Default value" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- DROPDOWN WITH TAGS -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Sales Staff that showed up</span>
+                                                <div class="card-table-cell">
+                                                    <fieldset class="select-dropdown-wrapper" style="width: 100%;">
+                                                        <select multiple data-js="select-with-search">
+                                                            <option>John Doe I</option>
+                                                            <option>John Doe II</option>
+                                                            <option>John Doe III</option>
+                                                            <option>John Doe IV</option>
+                                                            <option>John Doe V</option>
+                                                            <option>John Doe VI</option>
+                                                            <option>John Doe VII</option>
+                                                        </select>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+				</div>
+				<!-- TAB 02 -->
+				<div id="tab02" class="js-tab">
+                    <div class="layout context--formfilters">
+                        <div class="container clearfix">
+                            <div class="col-1">
+                                <h3>Tickets</h3>
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Male</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" data-male value="" placeholder="0" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Female</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" data-female value="" placeholder="0" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Total</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input data-tickets-total type="text" disabled value="" placeholder="-" />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <h3 class="card-header">Retail Deposit</h3>
+                                <table class="table css-responsive-table repeater">
+                                    <thead>
+                                    <tr>
+                                        <th><span>Male</span></th>
+                                        <th><span>Female</span></th>
+                                        <th><span>Ticket #</span></th>
+                                        <th><span>AMT. Collected ($)</span></th>
+                                        <th><span>For (Agent)</span></th>
+                                        <th><span>Actions</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-repeater-list="retail-deposit-list">
+                                    <tr data-repeater-item>
+                                        <td data-name="Male">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="0" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Female">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="0" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Ticket #">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="AMT. Collected ($)">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="$" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="For (Agent)">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Actions" class="fixed95">
+                                            <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tr style="display: none">
+                                        <td>
+                                            <input data-repeater-create type="hidden" value="Add"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-1">
+                                <h3 class="card-header">House Door Sales</h3>
+                                <table class="table css-responsive-table repeater">
+                                    <thead>
+                                    <tr>
+                                        <th><span>Male</span></th>
+                                        <th><span>Female</span></th>
+                                        <th><span>Agent/Company</span></th>
+                                        <th><span>Amount ($)</span></th>
+                                        <th><span>Third Party?</span></th>
+                                        <th><span>Actions</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody data-repeater-list="retail-deposit-list">
+                                    <tr data-repeater-item>
+                                        <td data-name="Male">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="0" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Female">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="0" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Agent/Company">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Amount ($)">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="$" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Third Party?">
+                                            <form class="card-form">
+                                                <fieldset>
+                                                    <input type="text" value="" placeholder="Default value" />
+                                                    <button data-js="submit-field" type="submit">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                    <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                </fieldset>
+                                            </form>
+                                        </td>
+                                        <td data-name="Actions" class="fixed95">
+                                            <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tr style="display: none">
+                                        <td>
+                                            <input data-repeater-create type="hidden" value="Add"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-1">
+                                <h3>Party notes</h3>
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell">Notes on vibe, energy, games and the party atmosphere</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <textarea rows="4"></textarea>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- DROPDOWN WITH TAGS -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell">What games were played?</span>
+                                                <div class="card-table-cell">
+                                                    <fieldset class="select-dropdown-wrapper" style="width: 100%;">
+                                                        <select multiple data-js="select-with-search">
+                                                            <option>John Doe I</option>
+                                                            <option>John Doe II</option>
+                                                            <option>John Doe III</option>
+                                                            <option>John Doe IV</option>
+                                                            <option>John Doe V</option>
+                                                            <option>John Doe VI</option>
+                                                            <option>John Doe VII</option>
+                                                        </select>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell">Rate the Crawls energy</span>
+                                                <div class="card-table-cell">
+                                                    <form class="form">
+                                                        <fieldset class="radio-default is-middle-alligned">
+                                                            <input type="radio" id="radio01" name="energyRate" value="1" />
+                                                            <label for="radio01">
+                                                                <i></i>
+                                                            </label>
+                                                            Poor
+                                                        </fieldset>
+                                                        <fieldset class="radio-default is-middle-alligned">
+                                                            <input type="radio" id="radio02" name="energyRate" value="2" />
+                                                            <label for="radio02">
+                                                                <i></i>
+                                                            </label>
+                                                            Alright
+                                                        </fieldset>
+                                                        <fieldset class="radio-default is-middle-alligned">
+                                                            <input type="radio" id="radio03" name="energyRate" value="3" />
+                                                            <label for="radio03">
+                                                                <i></i>
+                                                            </label>
+                                                            Fun
+                                                        </fieldset>
+                                                        <fieldset class="radio-default is-middle-alligned">
+                                                            <input type="radio" id="radio04" name="energyRate" value="4" />
+                                                            <label for="radio04">
+                                                                <i></i>
+                                                            </label>
+                                                            Amazing
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+				        </div>
+				    </div>
+				</div>
+				<!-- TAB 03 -->
+				<div id="tab03" class="js-tab">
+                    <div class="container clearfix">
+                        <div class="col-1">
+                            <p style="margin-bottom: 10px">
+                                <strong>AFTER HOURS</strong>
+                            </p>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="col-12 full-mobile">
+                                <div class="card-wrapper">
+                                    <h3 class="card-header">$5 Hours</h3>
+                                    <div class="card-inner">
+                                        <div class="card-table">
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250"># Tix Sold</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="0" data-after-hours-a-1 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">$</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="$" data-after-hours-a-2 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250"># Arrived</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="0" data-after-hours-a-3 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Kickback ($)</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="$" data-after-hours-a-4 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">REP COM</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="0" data-after-hours-a-5 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 full-mobile">
+                                <div class="card-wrapper">
+                                    <h3 class="card-header">$30 Hours</h3>
+                                    <div class="card-inner">
+                                        <div class="card-table">
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250"># Tix Sold</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="0" data-after-hours-b-1 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">$</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="$" data-after-hours-b-2 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250"># Arrived</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="0" data-after-hours-b-3 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Kickback ($)</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="$" data-after-hours-b-4 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">REP COM</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="0" data-after-hours-b-5 />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="col-12 right no-margin break-big">
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">T Income ($)</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" disabled value="$" data-after-hours-t-income />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="col-1">
+                                <div class="card-wrapper">
+                                    <h3 class="card-header">Expenses</h3>
+                                    <div class="card-inner">
+                                        <div class="card-table">
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">$5 Entry fee</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input data-after-hours-c-1 type="text" value="" placeholder="$" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">$30 Entry fee</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input data-after-hours-c-2 type="text" value="" placeholder="$" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Taxi</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input data-after-hours-c-3 type="text" value="" placeholder="$" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Gratuity</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input data-after-hours-c-4 type="text" value="" placeholder="$" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- INPUT DEFAULT -->
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">T REP COM</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input data-after-hours-c-5 type="text" value="" placeholder="$" />
+                                                            <button data-js="submit-field" type="submit">
+                                                                <i class="fa fa-check"></i>
+                                                            </button>
+                                                            <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 right no-margin break-big">
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">T Expense ($)</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" disabled value="0" data-after-hours-t-expense />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="card-wrapper">
+                                <div class="card-inner">
+                                    <div class="card-table">
+                                        <!-- INPUT DEFAULT -->
+                                        <div class="card-table-row">
+                                            <span class="card-table-cell fixed250">Total income</span>
+                                            <div class="card-table-cell">
+                                                <form class="card-form">
+                                                    <fieldset>
+                                                        <input data-total-income type="text" data-male value="" placeholder="$" />
+                                                        <button data-js="submit-field" type="submit">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- INPUT DEFAULT -->
+                                        <div class="card-table-row">
+                                            <span class="card-table-cell fixed250">Total expense</span>
+                                            <div class="card-table-cell">
+                                                <form class="card-form">
+                                                    <fieldset>
+                                                        <input data-total-expense type="text" data-female value="" placeholder="$" />
+                                                        <button data-js="submit-field" type="submit">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- INPUT DEFAULT -->
+                                        <div class="card-table-row">
+                                            <span class="card-table-cell fixed250">Take</span>
+                                            <div class="card-table-cell">
+                                                <form class="card-form">
+                                                    <fieldset>
+                                                        <input data-take type="text" disabled value="" placeholder="$" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <p style="margin-bottom: 10px;">
+                                <strong>INCOME</strong>
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                All income & description - do not include deposit or after hours take
+                            </p>
+                        </div>
+
+                        <div class="col-1">
+                            <table class="table css-responsive-table repeater">
+                                <thead>
+                                <tr>
+                                    <th><span>$</span></th>
+                                    <th><span>Description</span></th>
+                                    <th><span>Actions</span></th>
+                                </tr>
+                                </thead>
+                                <tbody data-repeater-list="income">
+                                <tr data-repeater-item>
+                                    <td data-name="$">
+                                        <form class="card-form">
+                                            <fieldset>
+                                                <input type="text" value="" placeholder="0" />
+                                                <button data-js="submit-field" type="submit">
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                                <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                            </fieldset>
+                                        </form>
+                                    </td>
+                                    <td data-name="Description">
+                                        <form class="card-form">
+                                            <fieldset>
+                                                <textarea rows="1"></textarea>
+                                            </fieldset>
+                                        </form>
+                                    </td>
+                                    <td data-name="Actions" class="fixed95">
+                                        <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                        <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tr style="display: none">
+                                    <td>
+                                        <input data-repeater-create type="hidden" value="Add"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-1">
+                            <p style="margin-bottom: 10px;">
+                                <strong>Expenses</strong>
+                            </p>
+                        </div>
+
+                        <div class="col-1">
+                            <h3 class="card-header">Travel</h3>
+                            <table class="table css-responsive-table repeater">
+                                <thead>
+                                <tr>
+                                    <th><span>$</span></th>
+                                    <th><span>Description</span></th>
+                                    <th><span>Actions</span></th>
+                                </tr>
+                                </thead>
+                                <tbody data-repeater-list="expenses">
+                                <tr data-repeater-item>
+                                    <td data-name="$">
+                                        <form class="card-form">
+                                            <fieldset>
+                                                <input type="text" value="" placeholder="0" />
+                                                <button data-js="submit-field" type="submit">
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                                <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                            </fieldset>
+                                        </form>
+                                    </td>
+                                    <td data-name="Description">
+                                        <form class="card-form">
+                                            <fieldset>
+                                                <textarea rows="1"></textarea>
+                                            </fieldset>
+                                        </form>
+                                    </td>
+                                    <td data-name="Actions" class="fixed95">
+                                        <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                        <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tr style="display: none">
+                                    <td>
+                                        <input data-repeater-create type="hidden" value="Add"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="col-12 right no-margin break-big">
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Total</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" disabled value="0" />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <h3 class="card-header">Hosp</h3>
+                            <table class="table css-responsive-table repeater">
+                                <thead>
+                                <tr>
+                                    <th><span>$</span></th>
+                                    <th><span>Description</span></th>
+                                    <th><span>Actions</span></th>
+                                </tr>
+                                </thead>
+                                <tbody data-repeater-list="retail-deposit-list">
+                                <tr data-repeater-item>
+                                    <td data-name="$">
+                                        <form class="card-form">
+                                            <fieldset>
+                                                <input type="text" value="" placeholder="0" />
+                                                <button data-js="submit-field" type="submit">
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                                <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                            </fieldset>
+                                        </form>
+                                    </td>
+                                    <td data-name="Description">
+                                        <form class="card-form">
+                                            <fieldset>
+                                                <textarea rows="1"></textarea>
+                                            </fieldset>
+                                        </form>
+                                    </td>
+                                    <td data-name="Actions" class="fixed95">
+                                        <button class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                        <button class="btn btn--secondary is-smaller" data-repeater-delete>
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tr style="display: none">
+                                    <td>
+                                        <input data-repeater-create type="hidden" value="Add"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="col-12 right no-margin break-big">
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell fixed250">Total</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" disabled value="0" />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <h3 class="card-header">Staff</h3>
+                            <div class="card-wrapper">
+                                <div class="card-inner">
+                                    <div class="card-table">
+                                        <div class="card-table-row">
+                                            <span class="card-table-cell">Total of Staff Total (from first page)</span>
+                                            <div class="card-table-cell">
+                                                <form class="card-form">
+                                                    <fieldset>
+                                                        <input type="text" value="" placeholder="0" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1">
+                            <div class="col-12 right no-margin break-big">
+                                <div class="card-wrapper">
+                                    <div class="card-inner">
+                                        <div class="card-table">
+                                            <div class="card-table-row">
+                                                <span class="card-table-cell">Grand total of expenses ($)</span>
+                                                <div class="card-table-cell">
+                                                    <form class="card-form">
+                                                        <fieldset>
+                                                            <input type="text" value="" placeholder="$" />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+				</div>
+				<!-- TAB 04 -->
+				<div id="tab04" class="js-tab">
+					tab 04
+				</div>
+				<!-- TABS FOOTER -->
+				<div class="layout context--tabsfooter">
+					<div class="container clearfix">
+						<div class="js-tabs-footer">
+							<div class="clearfix">
+								<div class="col-12 break-xs">
+									<div class="clearfix">
+										<button data-js="js-tab-prev" class="btn btn--primary btn-js-left">Previous</button>
+										<button data-js="js-tab-next" class="btn btn--transparent btn-js-right">Next</button>
+									</div>
+								</div>
+								<div class="col-12 break-xs no-margin text-right">
+									<button class="btn btn--primary btn-js-full">Finish</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/vendor/jquery.repeater.min.js"></script>
+	<script src="assets/js/vendor/is.min.js"></script>
+	<script src="assets/js/vendor/sweetalert.min.js"></script>
+	<script src="assets/js/functions.js"></script>
+	<script src="assets/js/event-plan-and-reports.js"></script>
+</body>
+</html>

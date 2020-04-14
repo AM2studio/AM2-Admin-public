@@ -1,0 +1,25 @@
+{
+  "name": "am2-admin",
+  "authors": [
+    "Boris Vidošević <boris.vidosevic@am2studio.hr>"
+  ],
+  "description": "",
+  "main": [
+    "html/admin/assets/js/functions.js"
+  ],
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tooltipster": "^3.3.0",
+    "jquery-validation": "^1.15.0"
+  }
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenRush</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div id="main">
+        <!-- HEADER -->
+        <div class="header clearfix">
+            <div class="header-table">
+                <div class="header-cell is-left">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a> <span>admin v 1.08</span>
+                    </div>
+                </div>
+                <div class="header-cell">
+                    <div class="clearfix">
+                        <!-- PROFILE -->
+                        <div class="profile-top">
+                            <div class="cell">
+                                <div class="img-wrapper">
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <span class="username">Username</span>
+                                <ul class="user-options">
+                                    <li><a href="#" class="profile-icon">Profile</a></li>
+                                    <li><a href="#" class="logout-icon">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SEARCH -->
+                        <div class="search-top">
+                            <div class="cell">
+                                <form class="top-search">
+                                    <input type="search" />
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu">
+            <a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+            <ul class="menu">
+                <li>
+                    <a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                </li>
+                <li class="has_submenu">
+                    <a href="#"><i class="fa fa-user"></i><span>Users</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Signup only <mark>1743</mark></a></li>
+                        <li><a href="#">Submited Verification <mark>10</mark></a></li>
+                        <li><a href="#">Verified Users <mark>4465</mark></a></li>
+                        <li class="active"><a href="#">Expired <mark>46</mark></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hospital-o"></i><span>Orders</span> <mark class="bg">123</mark></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar"></i><span>Dispensaries</span></a>
+                </li>
+                <li class="has_submenu active">
+                    <a href="#"><i class="fa fa-cube"></i><span>Products</span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Submited Verification</a></li>
+                        <li><a href="#">Verified Users</a></li>
+                        <li><a href="index.html">Expired</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-folder"></i><span>Pages</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-tag"></i><span>Promo codes</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- CONTENT -->
+        <div class="main">
+            <div class="container clearfix">
+
+                <!-- NOTIFICATION : INLINE -->
+                <div id="js-notifications">
+                    <!--
+                    <div class="notify notify--info">INLINE (from HTML) notification.<span class="close"></span></div>
+                    <div class="notify notify--success">INLINE (from HTML) notification.<span class="close"></span></div>
+                    <div class="notify notify--danger">INLINE (from HTML) notification.<span class="close"></span></div>
+                    -->
+                </div>
+
+
+                <!-- CONTENT HEADER -->
+                <div class="layout context--pageheader">
+                    <div class="container clearfix">
+                        <div class="col-12 break-big">
+                            <h1>Edit Product &nbsp;&nbsp;</h1>
+                            <button class="btn btn--primary"><i class="fa fa-trash"></i>&nbsp; Delete product</button>
+                        </div>
+                        <div class="col-12 break-big no-margin">
+                            <ul class="breadcrumbs">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Edit Product</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCT INFORMATION -->
+                <div class="layout">
+                    <div class="container clearfix">
+                        <div class="col-1 break-big">
+                            
+
+                                <form id="form-inline-0" class="card-form no-inline-edit js-form-validate" method="post" action="ajax_dummy.php" data-notify="inline">
+                                    <div class="card-wrapper hidden">
+                                        <h3 class="card-header">
+                                            Standard submit + validation
+                                            <span class="badge badge--info">inline notification</span>
+                                            <a href="#" class="card-toggler"></a>
+                                        </h3>                                   
+                                        <div class="card-inner">
+                                            <div class="card-table">
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Product name</span>
+                                                    <div class="card-table-cell">
+                                                        <fieldset>
+                                                            <input type="text" class="is-green required-notempty" name="name" value="" />
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Product price</span>
+                                                    <div class="card-table-cell">
+                                                        <fieldset >
+                                                            <select data-js="select" name="options" class="required-notempty" >
+                                                                <option value=""> - </option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="js-form-validate__messages"></div>
+                                        </div>
+                                        <div class="card-footer clearfix">
+                                            <button class="left btn btn--primary" type="submit">Save changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form id="form-inline-2" class="card-form no-inline-edit js-ajax-form" method="post" action="ajax_dummy.php" data-notify="modal">
+                                    <div class="card-wrapper hidden">
+                                        <h3 class="card-header">    
+                                            Ajax submit / no validation
+                                            <span class="badge badge--info">notify modal</span>
+                                            <a href="#" class="card-toggler"></a>
+                                        </h3>                                   
+                                        <div class="card-inner">
+                                            <div class="card-table">
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Product name</span>
+                                                    <div class="card-table-cell">
+                                                        <fieldset>
+                                                            <input type="text" class="is-green required-notempty" name="name" value=""/>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Product price</span>
+                                                    <div class="card-table-cell">
+                                                        <fieldset >
+                                                            <select data-js="select" name="options"  class="required-notempty" >
+                                                                <option value=""> - </option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer clearfix">
+                                            <button class="left btn btn--primary" type="submit">Save changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                                <form id="form-inline-1" class="card-form no-inline-edit js-ajax-form js-form-validate" method="post" action="ajax_dummy.php" data-notify="pnotify">
+                                    <div class="card-wrapper hidden">
+                                        <h3 class="card-header">
+                                            Ajax submit + validation <span class="badge badge--info">pnotify</span>
+                                            <a href="#" class="card-toggler"></a>
+                                        </h3>                                   
+                                        <div class="card-inner">
+                                            <div class="card-table">
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Product name</span>
+                                                    <div class="card-table-cell">
+                                                        <fieldset>
+                                                            <input type="text" class="is-green required-notempty" name="name" value="" />
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <div class="card-table-row">
+                                                    <span class="card-table-cell fixed250">Product price</span>
+                                                    <div class="card-table-cell">
+                                                        <fieldset >
+                                                            <select data-js="select" name="options" class="required-notempty" >
+                                                                <option value=""> - </option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer clearfix">
+                                            <button class="left btn btn--primary" type="submit">Save changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                        </div>
+
+                        <div class="col-1 break-big">
+                            <button class="" type="button" data-remodal-target="modal-0">MODAL: Standard submit + validation </button>
+                            <br /><br />
+                            <button class="" type="button" data-remodal-target="modal-2">MODAL: Ajax submit / no validation &nbsp; <span class="badge badge--info">leave modal open after submit</span></button>
+                            <br /><br />
+                            <button class="" type="button" data-remodal-target="modal-1">MODAL: Ajax submit + validation &nbsp; <span class="badge badge--info">close modal after submit</span></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- modal form 1 -->
+    <div class="remodal" data-remodal-id="modal-0" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form id="form-modal-1" class="card-form no-inline-edit js-form-validate" method="post" action="ajax_dummy.php" >
+            <div class="card-wrapper">
+                <h3 class="card-header">Standard submit + validation <span class="badge badge--info">modal notification</span></h3>                                   
+                <div class="card-inner">
+                    <div class="card-table">
+                        <div class="card-table-row">
+                            <span class="card-table-cell fixed250">Product name</span>
+                            <div class="card-table-cell">
+                                <fieldset>
+                                    <input type="text" class="is-green required-notempty" name="name" value="" />
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="card-table-row">
+                            <span class="card-table-cell fixed250">Product price</span>
+                            <div class="card-table-cell">
+                                <fieldset >
+                                    <select data-js="selectX required-notempty" name="options" >
+                                        <option value=""> - </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer clearfix">
+                    <button class="left btn btn--primary" type="submit">Save changes</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- modal form 1 -->
+    <div class="remodal" data-remodal-id="modal-1" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form id="form-modal-1" class="card-form no-inline-edit js-ajax-form js-form-validate" method="post" action="ajax_dummy.php" data-notify="pnotify" data-close-modal="true">
+            <div class="card-wrapper">
+                <h3 class="card-header">Ajax submit + validation <span class="badge badge--info">pnotify notification</span></h3>                                   
+                <div class="card-inner">
+                    <div class="card-table">
+                        <div class="card-table-row">
+                            <span class="card-table-cell fixed250">Product name</span>
+                            <div class="card-table-cell">
+                                <fieldset>
+                                    <input type="text" class="is-green required-notempty" name="name" value="" />
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="card-table-row">
+                            <span class="card-table-cell fixed250">Product price</span>
+                            <div class="card-table-cell">
+                                <fieldset >
+                                    <select data-js="selectX" name="options" class="required-notempty" >
+                                        <option value=""> - </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer clearfix">
+                    <button class="left btn btn--primary" type="submit">Save changes</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- modal form 2-->
+    <div class="remodal" data-remodal-id="modal-2" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form id="form-modal-2" class="card-form js-ajax-form " method="post" action="ajax_dummy.php" data-notify="pnotify" data-close-modal="false">
+            <div class="card-wrapper">
+                <h3 class="card-header">
+                    User Information <span class="badge badge--info">notify inline</span>
+                </h3>                                   
+                <div class="card-inner">
+                    <div class="card-table">
+                        <div class="card-table-row">
+                            <span class="card-table-cell fixed250">Product name</span>
+                            <div class="card-table-cell">
+                                <fieldset>
+                                    <input type="text" class="is-green" name="name" value=""/>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="card-table-row">
+                            <span class="card-table-cell fixed250">Product price</span>
+                            <div class="card-table-cell">
+                                <fieldset >
+                                    <select data-js="selectX" name="options" >
+                                        <option value=""> - </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer clearfix">
+                    <button class="left btn btn--primary" type="submit">Save changes</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- modal notification : single entity -->
+    <div class="remodal" data-remodal-id="notify" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="notify-content"></div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/functions.js"></script>
+
+
+</body>
+</html>

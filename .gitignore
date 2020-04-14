@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+prepros.cfg
+/node_modules
+/bower_components
+/html/admin/assets/css/*
+/html/admin/temp.html
+/html/admin/prepros.cfg
+html/admin/.sass-cache/*
+html/.sass-cache/*

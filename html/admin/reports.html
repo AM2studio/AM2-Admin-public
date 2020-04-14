@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+    <meta charset="UTF-8">
+    <title>WorldCrawl ERP</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <!-- HEADER -->
+        <div class="header clearfix">
+            <div class="header-table">
+                <div class="header-cell is-left">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a> <span>admin v 1.08</span>
+                    </div>
+                </div>
+                <div class="header-cell">
+                    <div class="clearfix">
+                        <!-- PROFILE -->
+                        <div class="profile-top">
+                            <div class="cell">
+                                <div class="img-wrapper">
+                                    <img src="" alt="" />
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <span class="username">Username</span>
+                                <ul class="user-options">
+                                    <li><a href="#" class="profile-icon">Profile</a></li>
+                                    <li><a href="#" class="logout-icon">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SEARCH -->
+                        <div class="search-top">
+                            <div class="cell">
+                                <form class="top-search">
+                                    <input type="search" />
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu">
+            <a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+            <ul class="menu">
+                <li>
+                    <a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                </li>
+                <li class="has_submenu">
+                    <a href="#"><i class="fa fa-user"></i><span>Users</span><mark class="bg">48</mark></a>
+                    <ul class="submenu">
+                        <li><a href="user-list.html">All Users <mark>48</mark></a></li>
+                        <li><a href="#">Managers <mark>10</mark></a></li>
+                        <li><a href="#">Tour Guides <mark>12</mark></a></li>
+                        <li><a href="#">Promotors <mark>26</mark></a></li>
+                    </ul>
+                </li>
+                <li class="has_submenu">
+                    <a href="#"><i class="fa fa-hospital-o"></i><span>Reports</span></a>
+                    <ul class="submenu">
+                        <li><a href="city-weekly-report.html">City Weekly Report</a></li>
+                        <li><a href="monthly-report.html">Monthly Report</a></li>
+                    </ul>
+                </li>
+                <li class="has_submenu">
+                    <a href="#"><i class="fa fa-cube active"></i><span>Form Submissions</span></a>
+                    <ul class="submenu">
+                        <li><a href="event-plan-and-reports.html" class="active">Event Plan And Reports</a></li>
+                        <li><a href="sales-reports.html">Sales Reports</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar"></i><span>Events</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-folder"></i><span>Sample Page</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- CONTENT -->
+        <div class="main">
+            <div class="container clearfix">
+                <!-- CONTENT HEADER -->
+                <div class="layout context--pageheader">
+                    <div class="clearfix">
+                        <div class="col-12 break-big">
+                            <h1>Event Reports</h1>
+                        </div>
+                        <div class="col-12 break-big no-margin">
+                            <ul class="breadcrumbs">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">Reports</a></li>
+                                <li><a href="#">Event Report</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- FORM FILTER -->
+				<form>
+					<div class="layout context--formfilters">
+						<div class="container clearfix">
+							<!-- INPUT SEARCH -->
+							<div class="col-1 no-margin break-big left-col">
+								<div class="select-wrapper">
+									<label for="filter-display">City:</label>
+									<select id="filter-display" data-js="select">
+										<option>All</option>
+										<option>Miami</option>
+										<option selected="">San Diego</option>
+										<option>Whistler</option>
+										<option>Las Vegas</option>
+									</select>
+								</div>
+                                <div class="select-wrapper">
+                                    <label for="filter-display">Month:</label>
+                                    <select id="filter-display" data-js="select">
+                                        <option>All</option>
+                                        <option>January</option>
+                                        <option selected="">February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                    </select>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</form>
+                <div class="spacer"></div>
+                <!-- ORDER HISTORY -->
+                <div class="layout context--pagecontent">
+                    <div class="clearfix">
+                    <div class="col-1">
+                        <div class="col-12">
+                            <div class="card-wrapper">
+                                <h3 class="card-header">Admissions week over week</h3>
+                                <div class="card-inner">
+                                    <div class="card-table">
+                                        <canvas id="canvas"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-1">
+                                <div class="widget--vertical__wrapper bg--slate-700">
+                                    <div class="col-13">
+                                        <div class="widget widget--vertical am2-counter" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                            <div class="icon"> 
+                                                <i class="fa fa-users bg--white text--slate-700"></i>
+                                            </div> 
+                                            <div class="label"> 
+                                                <strong class="num">48</strong> 
+                                                <span class="">Events</span> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="col-13">
+                                        <div class="widget widget--vertical am2-counter" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                            <div class="icon"> 
+                                                <i class="fa fa-file-text-o bg--white text--slate-700"></i>
+                                            </div> 
+                                            <div class="label"> 
+                                                <strong class="num">42</strong> 
+                                                <span class="">Form Submissions</span> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="col-13">
+                                        <div class="widget widget--vertical am2-counter" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                            <div class="icon"> 
+                                                <i class="fa fa-check-square-o bg--white text--slate-700"></i>
+                                            </div> 
+                                            <div class="label"> 
+                                                <strong class="num">87.5%</strong> 
+                                                <span class="">Submission Rate</span> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="col-12">
+                                    <div class="widget am2-counter bg--green-600" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                        <div class="icon bg--green-700"> 
+                                            <i class="fa fa-dollar bg--white text--green-800"></i>
+                                        </div> 
+                                        <div class="label"> 
+                                            <strong class="num">$2,220.00</strong> 
+                                            <span class="">Revenue in March</span> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="widget am2-counter bg--white" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                        <div class="icon bg--green-800"> 
+                                            <i class="fa fa-bar-chart-o"></i>
+                                        </div> 
+                                        <div class="label"> 
+                                            <strong class="num text--green-800">$456.00</strong> 
+                                            <span class="">Difference Monthly</span> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="widget am2-counter bg--white" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                        <div class="icon "> 
+                                            <i class="fa fa-dollar bg--green-800"></i>
+                                        </div> 
+                                        <div class="label"> 
+                                            <strong class="num text--green-800">3.46%</strong> 
+                                            <span class="">Difference Monthly</span> 
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="widget am2-counter bg--teal-600" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                        <div class="icon bg--teal-700"> 
+                                            <i class="fa fa-user bg--white text--teal-800"></i>
+                                        </div> 
+                                        <div class="label"> 
+                                            <strong class="num">968</strong> 
+                                            <span class="">Admissions</span> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="widget am2-counter bg--white" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                        <div class="icon bg--teal-800"> 
+                                            <i class="fa fa-bar-chart-o"></i>
+                                        </div> 
+                                        <div class="label"> 
+                                            <strong class="num text--red-800">-56</strong> 
+                                            <span class="">Difference Monthly</span> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="widget am2-counter bg--white" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2"> 
+                                        <div class="icon "> 
+                                            <i class="fa fa-user bg--teal-800"></i>
+                                        </div> 
+                                        <div class="label"> 
+                                            <strong class="num text--red-800">5.78%</strong> 
+                                            <span class="">Difference Monthly</span> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="col-13">
+                            <div class="card-wrapper">
+                                <h3 class="card-header">Atmosphere</h3>
+                                <div class="card-inner">
+                                    <div class="card-table chart--has-legend">
+                                        <div class="canvas-holder" style="">
+                                            <canvas id="chart-area" width="500" height="500" />
+                                        </div>
+                                        <div id="atmosphere--legend" class="chart__legend"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-13 no_margin">
+                            <div class="card-wrapper">
+                                <h3 class="card-header">Games Played</h3>
+                                <div class="card-inner">
+                                    <div class="card-table">
+                                        <div class="canvas-holder" style="">
+                                            <canvas id="games-chart" height="200" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="assets/js/vendor/Chart.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <!-- CHARTS -->
+    <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+    var lineChartData = {
+        labels : ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        datasets : [
+            {
+                label: "This week",
+                fillColor : "rgba(0, 121, 107,0.5)",
+                strokeColor : "rgba(0, 121, 107,0.8)",
+                pointColor : "rgba(0, 121, 107,0.8)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "#fff",
+                pointHighlightStroke : "rgba(0, 121, 107,0.8)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Last week",
+                fillColor : "rgba(153, 153, 153,0.2)",
+                strokeColor : "rgba(153, 153, 153,0.7)",
+                pointColor : "rgba(153, 153, 153,0.7)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "#fff",
+                pointHighlightStroke : "rgba(153, 153, 153,0.7)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            }
+        ]
+
+    }
+
+
+
+    var doughnutData = [
+        {
+            value: 300,
+            color:"rgb(139, 199, 95)",
+            highlight: "rgba(139, 199, 95,0.8)",
+            label: "Amazing"
+        },
+        {
+            value: 100,
+            color: "rgb(173, 199, 95)",
+            highlight: "rgba(173, 199, 95,0.8)",
+            label: "Fun"
+        },
+        {
+            value: 50,
+            color: "rgb(199, 172, 95)",
+            highlight: "rgba(199, 172, 95,0.8)",
+            label: "Alright"
+        },
+        
+        {
+            value: 40,
+            color: "rgb(212, 85, 85)",
+            highlight: "rgba(212, 85, 85,0.8)",
+            label: "Poor"
+        },
+
+    ];
+
+    var barChartData = {
+        labels : ["Game #1","Game #2","Game #3","Game #4","Game #5","Game #6","Game #7"],
+        datasets : [
+            {
+                fillColor : "rgba(220,220,220,0.5)",
+                strokeColor : "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+        ]
+
+    }
+
+    window.onload = function(){
+        var ctx2 = document.getElementById("chart-area").getContext("2d");
+        window.myDoughnut = new Chart(ctx2).Doughnut(doughnutData, {
+            responsive : true,
+            legendTemplate : "<ul class=\"chart--legend\"><% for (var i=0; i<doughnutData.length; i++){%><li><span style=\"background-color:<%=doughnutData[i].color%>\"></span><%if(doughnutData[i].label){%><%=doughnutData[i].label%><%}%></li><%}%></ul>"
+        });
+        var legend = myDoughnut.generateLegend();
+        $('#atmosphere--legend').empty().append(legend);
+
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx).Line(lineChartData, {
+            responsive: true
+        });
+
+        var ctx3 = document.getElementById("games-chart").getContext("2d");
+        window.myBar = new Chart(ctx3).Bar(barChartData, {
+            responsive : true
+        });
+    };
+
+
+
+    </script>
+    
+    <!-- TOOLTIP -->
+    <script>
+    $(document).ready(function() {
+
+        // https://github.com/iamceege/tooltipster
+        $('[data-js="tooltip-example"]').tooltipster({
+            contentAsHTML: true,
+            arrow: false,
+            maxWidth: 300,
+            positionTracker: true
+        });
+
+        // http://fancyapps.com/fancybox/#examples
+        var additional_template = '<div class="fancybox-additional-options"><a class="close-fancybox btn btn--noborder"><i class="fa fa-close"></i></a><a class="btn"><i class="fa fa-expand"></i></a><a class="btn"><i class="fa fa-repeat"></i></a><a class="btn"><i class="fa fa-undo"></i></a><a class="btn btn--secondary"><i class="fa fa-trash"></i></a></div>';
+        $('[data-fancybox]').fancybox({
+            padding: 5,
+            closeBtn: false,
+            tpl: {
+                wrap: '<div class="fancybox-wrap" tabIndex="-1">' + additional_template + '<div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>'
+            }
+        });
+
+        $(document).on('click', '.close-fancybox', function() {
+            $.fancybox.close();
+        });
+
+    });
+    </script>
+</body>
+
+</html>

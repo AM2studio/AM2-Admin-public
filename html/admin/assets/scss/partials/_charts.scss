@@ -1,0 +1,33 @@
+ul.chart--legend {
+    padding-left: 0px;
+    li {
+        list-style: none;
+        font-weight: bold;
+        margin-bottom: 2px;
+        span {
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: relative;
+            float: left;
+            margin-right: 15px;
+        }
+    }
+}
+
+.chart--has-legend {
+    .canvas-holder {
+        position: relative;
+        float: right;
+        width: 67%;
+
+        @include breakpoint($breakpoint_mobile) {
+            width: 100%;
+        }
+    }
+    .chart__legend {
+        position: relative;
+        float: left;
+        width: 30%;
+    }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+	<meta charset="UTF-8">
+	<title>GreenRush</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<div id="main">
+		<!-- HEADER -->
+		<div class="header clearfix">
+			<div class="header-table">
+				<div class="header-cell is-left">
+					<div class="header__logo">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="logo">
+						</a> <span>admin v 1.08</span>
+					</div>
+				</div>
+				<div class="header-cell">
+					<div class="clearfix">
+						<!-- PROFILE -->
+						<div class="profile-top">
+							<div class="cell">
+								<div class="img-wrapper">
+									<img src="" alt="" />
+								</div>
+							</div>
+							<div class="cell">
+								<span class="username">Username</span>
+								<ul class="user-options">
+									<li><a href="#" class="profile-icon">Profile</a></li>
+									<li><a href="#" class="logout-icon">Logout</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- SEARCH -->
+						<div class="search-top">
+							<div class="cell">
+								<form class="top-search">
+									<input type="search" />
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR -->
+		<div class="sidebar-menu">
+			<a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+			<ul class="menu">
+				<li>
+					<a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="has_submenu">
+					<a href="#"><i class="fa fa-user"></i><span>Users</span></a>
+					<ul class="submenu">
+						<li><a href="#">Signup only <mark>1743</mark></a></li>
+						<li><a href="#">Submited Verification <mark>10</mark></a></li>
+						<li><a href="#">Verified Users <mark>4465</mark></a></li>
+						<li class="active"><a href="#">Expired <mark>46</mark></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hospital-o"></i><span>Orders</span> <mark class="bg">123</mark></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar"></i><span>Dispensaries</span></a>
+				</li>
+				<li class="has_submenu active">
+					<a href="#"><i class="fa fa-cube"></i><span>Products</span></a>
+					<ul class="submenu">
+						<li><a href="#">Submited Verification</a></li>
+						<li><a href="#">Verified Users</a></li>
+						<li><a href="index.html">Expired</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-folder"></i><span>Pages</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-tag"></i><span>Promo codes</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- CONTENT -->
+		<div class="main">
+			<div class="container clearfix">
+				<!-- CONTENT HEADER -->
+				<div class="layout context--pageheader">
+					<div class="container clearfix">
+						<div class="col-12 break-big">
+							<h1>Edit Product &nbsp;&nbsp;</h1>
+							<button class="btn btn--primary"><i class="fa fa-trash"></i>&nbsp; Delete product</button>
+						</div>
+						<div class="col-12 break-big no-margin">
+							<ul class="breadcrumbs">
+								<li><a href="#">Admin</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Edit Product</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- PRODUCT INFORMATION -->
+				<div class="layout">
+					<div class="container clearfix">
+						<div class="col-12 break-big">
+							<div class="card-wrapper">
+								<h3 class="card-header">Product Information</h3>
+								<div class="card-inner">
+									<div class="card-table">
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Product name</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" class="is-green" value="Mighty Janice Outdoor" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Brand</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="Medmen" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Strain</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="UbarHaze" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Category</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="Flowers" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Subcategory</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="Hybrid" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">THC Level</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="12 %" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">CBD Level</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="9.23 %" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="card-table-row">
+											<span class="card-table-cell fixed250">Description</span>
+											<div class="card-table-cell">
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+									</div>
+									<p>This tincture comes in a gram syringe. It may be taken sublingually, smoked, or added to a drink. Touts about 60mg of CBD and about 40mg of indica THC. Great for pain, cancer, and a number of other illnesses.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 break-big no-margin">
+							<!-- CHOICES / PRICE -->
+							<div class="card-wrapper">
+								<h3 class="card-header">Choices / Price</h3>
+								<div class="card-inner">
+									<table class="card-table">
+										<tr>
+											<td class="fixed75">Gram</td>
+											<td>
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="$35,00" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td class="fixed75">1/8 Oz</td>
+											<td>
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="$99,00" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td class="fixed75">1/4 Oz</td>
+											<td>
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="$170,00" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td class="fixed75">1/2 Oz</td>
+											<td>
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="$299,00" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td class="fixed75">Oz</td>
+											<td>
+												<form class="card-form">
+													<fieldset>
+														<input type="text" value="$550,00" />
+														<button data-js="submit-field" type="submit"><i class="fa fa-check"></i></button>
+														<i class="fieldset-overlay" data-js="focus-on-field"></i>
+													</fieldset>
+												</form>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- PRODUCT IMAGES -->
+							<div class="card-wrapper">
+								<h3 class="card-header">Product Images <small>Default image is selected / green</small></h3>
+								<div class="card-inner">
+									<!-- TODO: PRODUCT PHOTOS PLUGIN -->
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+</html>

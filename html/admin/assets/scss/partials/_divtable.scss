@@ -1,0 +1,77 @@
+.divtable {
+    $row: &;
+
+    // common
+    &__row {
+    }
+
+    &__column {
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+
+        &--actions {
+            text-align: right;
+        }
+
+        > .select-dropdown-wrapper {
+            border: none;
+        }
+    }
+
+    // header
+    &__header {
+        @include clearfix();
+        position: relative;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 25px;
+        color: #5a5a5a;
+        background-color: #ededed;
+        text-align: center;
+
+        #{$row}__row {
+
+        }
+    }
+
+    //body
+    &__body {
+        @include clearfix();
+        margin-bottom: 40px;
+
+        #{$row}__row {
+            border-bottom: 1px solid #dfdfdf;
+        }
+
+        //other
+        .select2-container--default .select2-selection--multiple {
+            padding: 0;
+        }
+        .select2-container--default .select2-selection--multiple .select2-selection__choice {
+            margin-top: 5px;
+        }
+        .select2-container .select2-selection--multiple .select2-search--inline .select2-search__field {
+            line-height: 27px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 0;
+        }
+        .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+            vertical-align: top;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 40px;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 36px;
+        }
+
+        .checkbox-toggle label {
+            margin: 0;
+        }
+    }
+
+    //footer
+}

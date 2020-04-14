@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="fixed">
+<head>
+	<meta charset="UTF-8">
+	<title>GreenRush</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<div id="main">
+		<!-- HEADER -->
+		<div class="header clearfix">
+			<div class="header-table">
+				<div class="header-cell is-left">
+					<div class="header__logo">
+						<a href="#">
+							<img src="assets/images/logo.png" alt="logo">
+						</a> <span>admin v 1.08</span>
+					</div>
+				</div>
+				<div class="header-cell">
+					<div class="clearfix">
+						<!-- PROFILE -->
+						<div class="profile-top">
+							<div class="cell">
+								<div class="img-wrapper">
+									<img src="" alt="" />
+								</div>
+							</div>
+							<div class="cell">
+								<span class="username">Username</span>
+								<ul class="user-options">
+									<li><a href="#" class="profile-icon">Profile</a></li>
+									<li><a href="#" class="logout-icon">Logout</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- SEARCH -->
+						<div class="search-top">
+							<div class="cell">
+								<form class="top-search">
+									<input type="search" />
+									<button type="submit"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SIDEBAR -->
+		<div class="sidebar-menu">
+			<a href="#" class="sidebar-toggle js-sidebar-toggle"><span>Navigation</span><i class="fa fa-bars"></i></a>
+			<ul class="menu">
+				<li>
+					<a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+				</li>
+				<li class="has_submenu active">
+					<a href="#"><i class="fa fa-user"></i><span>Users</span></a>
+					<ul class="submenu">
+						<li><a href="#">Signup only <mark>1743</mark></a></li>
+						<li><a href="#">Submited Verification <mark>10</mark></a></li>
+						<li><a href="#">Verified Users <mark>4465</mark></a></li>
+						<li class="active"><a href="#">Expired <mark>46</mark></a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-hospital-o"></i><span>Orders</span> <mark class="bg">123</mark></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-calendar"></i><span>Dispensaries</span></a>
+				</li>
+				<li class="has_submenu">
+					<a href="#"><i class="fa fa-cube"></i><span>Products</span></a>
+					<ul class="submenu">
+						<li><a href="#">Submited Verification</a></li>
+						<li><a href="#">Verified Users</a></li>
+						<li><a href="index.html">Expired</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-folder"></i><span>Pages</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-tag"></i><span>Promo codes</span></a>
+				</li>
+				<li>
+					<a href="index.html"><i class="fa fa-gear"></i><span>Settings</span></a>
+				</li>
+			</ul>
+		</div>
+		<!-- CONTENT -->
+		<div class="main">
+			<div class="container clearfix">
+				<!-- CONTENT HEADER -->
+				<div class="layout context--pageheader">
+					<div class="container clearfix">
+						<div class="col-1">
+							<h1>Repeater example</h1>
+						</div>
+
+                        <!--start: new table-->
+                        <p><strong>4 ROWS TABLE EXAMPLE</strong></p>
+                        <header class="divtable__header">
+                            <div class="col-1 divtable__row">
+                                <div class="col-14">
+                                    Dropdown with tags (select2)
+                                </div>
+                                <div class="col-14">
+                                    Datepicker
+                                </div>
+                                <div class="col-14">
+                                    Datepicker (different format)
+                                </div>
+                                <div class="col-14">
+                                    Actions
+                                </div>
+                            </div>
+                        </header>
+                        <main class="divtable__body">
+                            <form action="" class="col-1 card-form divrepeater">
+                                <!--start: repeater group a-->
+                                <div class="col-1" data-repeater-list="group-a">
+                                    <div class="col-1 divtable__row" data-repeater-item>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset class="select-dropdown-wrapper">
+                                                <select multiple data-js="select-with-search">
+                                                    <option>Dropdown option 1</option>
+                                                    <option>Dropdown option 2</option>
+                                                    <option>Dropdown option 3</option>
+                                                    <option>Dropdown option 4</option>
+                                                    <option>Dropdown option 5</option>
+                                                    <option>Dropdown option 6</option>
+                                                    <option>Dropdown option 7</option>
+                                                    <option>Dropdown option 8</option>
+                                                    <option>Dropdown option 9</option>
+                                                    <option>Dropdown option 10</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset>
+                                                <input data-js="datepicker" type="text" value="2016-03-15" class="input-datepicker" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset>
+                                                <input data-js="datepicker-format" type="text" value="" class="input-datepicker" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column divtable__column--actions">
+                                            <fieldset>
+                                                <span class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <span class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end: repeater group a-->
+
+                                <!--HIDDEN REPEATER CREATE-->
+                                <input data-repeater-create type="hidden" value="Add"/>
+                            </form>
+                        </main>
+                        <!--end: new table-->
+
+                        <!--start: new table-->
+                        <p><strong>4 ROWS TABLE EXAMPLE</strong></p>
+                        <header class="divtable__header">
+                            <div class="col-1 divtable__row">
+                                <div class="col-14">
+                                    Text field
+                                </div>
+                                <div class="col-14">
+                                    Text field
+                                </div>
+                                <div class="col-14">
+                                    Dropdown (select2)
+                                </div>
+                                <div class="col-14">
+                                    Actions
+                                </div>
+                            </div>
+                        </header>
+                        <main class="divtable__body">
+                            <form action="" class="col-1 card-form divrepeater">
+                                <!--start: repeater group a-->
+                                <div class="col-1" data-repeater-list="group-a">
+                                    <div class="col-1 divtable__row" data-repeater-item>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset>
+                                                <input type="text" class="is-green" value="Green value" />
+                                                <button data-js="submit-field" type="submit">
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                                <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset>
+                                                <input type="text" value="Default value" />
+                                                <button data-js="submit-field" type="submit">
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                                <i class="fieldset-overlay" data-js="focus-on-field"></i>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset class="select-dropdown-wrapper">
+                                                <select data-js="select">
+                                                    <option>Dropdown option 1</option>
+                                                    <option>Dropdown option 2</option>
+                                                    <option>Dropdown option 3</option>
+                                                    <option>Dropdown option 4</option>
+                                                    <option>Dropdown option 5</option>
+                                                    <option>Dropdown option 6</option>
+                                                    <option>Dropdown option 7</option>
+                                                    <option>Dropdown option 8</option>
+                                                    <option>Dropdown option 9</option>
+                                                    <option>Dropdown option 10</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column divtable__column--actions">
+                                            <fieldset>
+                                                <span class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <span class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end: repeater group a-->
+
+                                <!--HIDDEN REPEATER CREATE-->
+                                <input data-repeater-create type="hidden" value="Add"/>
+                            </form>
+                        </main>
+                        <!--end: new table-->
+
+                        <!--start: new table-->
+                        <p><strong>4 ROWS TABLE EXAMPLE</strong></p>
+                        <header class="divtable__header">
+                            <div class="col-1 divtable__row">
+                                <div class="col-14">
+                                    Radio
+                                </div>
+                                <div class="col-14">
+                                    Checkbox
+                                </div>
+                                <div class="col-14">
+                                    Toggle
+                                </div>
+                                <div class="col-14">
+                                    Actions
+                                </div>
+                            </div>
+                        </header>
+                        <main class="divtable__body">
+                            <form action="" class="col-1 card-form divrepeater">
+                                <!--start: repeater group c-->
+                                <div class="col-1" data-repeater-list="group-c">
+                                    <div class="col-1 divtable__row" data-repeater-item>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset class="radio-default">
+                                                <input type="radio" id="radio01" />
+                                                <label for="radio01">
+                                                    <i></i>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset class="checkbox-default">
+                                                <input type="checkbox" id="checkbox02" />
+                                                <label for="checkbox02">
+                                                    <i></i>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column">
+                                            <fieldset class="checkbox-toggle">
+                                                <input type="checkbox" id="checkbox01" data-repeat-randomize="id" />
+                                                <label for="checkbox01"  data-repeat-randomize="for"></label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-14 divtable__column divtable__column--actions">
+                                            <fieldset>
+                                                <span class="btn btn--primary is-smaller" data-repeater-create-fake>
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <span class="btn btn--secondary is-smaller" data-repeater-delete>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end: repeater group c-->
+
+                                <!--HIDDEN REPEATER CREATE-->
+                                <input data-repeater-create type="hidden" value="Add"/>
+                            </form>
+                        </main>
+                        <!--end: new table-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/vendor/jquery.repeater.min.js"></script>
+	<script src="assets/js/vendor/is.min.js"></script>
+	<script src="assets/js/vendor/sweetalert.min.js"></script>
+	<script src="assets/js/functions.js"></script>
+	<script src="assets/js/event-plan-and-reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* GENERAL - direct usage helpers
+* -------------------------------------- */
+.left { 
+	position: relative; 
+	float: left; 
+} 
+
+.right { 
+	position: relative; 
+	float: right; 
+} 
+
+.no-margin { 
+	margin-right: 0px; 
+	margin-left: 0px; 
+}
+
+.spacer {
+	position: relative;
+	width: 100%;
+	height: $grid_spacer;
+
+	&--half{
+		height: $grid_spacer / 2;
+	}
+
+	&--double{
+		height: $grid_spacer * 2;
+	}
+}
+
+.text-left {
+	text-align: left !important;;
+}
+.text-center {
+	text-align: center !important;;
+}
+.text-right {
+	text-align: right !important;
+}
+
+.text-ucase{
+	text-transform: uppercase;
+}
+
+.text-lcase{
+	text-transform: lowercase;
+}
+
+.text-bold{
+	font-weight: 700;
+}
+
+.text-medium{
+	font-weight: 500;
+}
+
+.text-regular{
+	font-weight: 400;
+}
+
+.text-light{
+	font-weight: 300;
+}
+
+.full-mobile{
+	@include breakpoint($breakpoint_mobile){
+		width: 100% !important;
+	}
+}
+.full-tablet{
+	@include breakpoint($breakpoint_tablet){
+        width: 100% !important;
+	}
+}
+.full-desktop{
+	@include breakpoint($breakpoint_desktop){
+        width: 100% !important;
+	}
+}

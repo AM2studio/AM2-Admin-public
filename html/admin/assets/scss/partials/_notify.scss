@@ -1,0 +1,62 @@
+.notify{
+
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color_content_text;
+    border: 1px solid transparent;
+
+    @include opacity(1);
+    @include transition(opacity .5s ease-in-out);
+
+    &--removed{
+        @include opacity(0);
+    }
+
+    &--success{        
+        /*color: darken( $color_success, 25%);*/
+        color: #ffffff;
+        background-color: $color_success;
+        /*border-color: darken( $color_success, 25%);*/
+    }
+
+    &--info{
+        color: darken( $color_info, 25%);
+        background-color: $color_info;
+        border-color: darken( $color_info, 25%);
+    }
+
+    &--warning{
+        color: darken( $color_warning, 25%);
+        background-color: $color_warning;
+        border-color: darken( $color_warning, 25%);
+    }
+
+    &--danger{
+        /*color: darken( $color_danger, 25%);*/
+        color: #ffffff;
+        background-color: $color_danger;
+        /*border-color: darken( $color_danger, 25%);*/
+    }
+
+    span{
+        position: absolute;
+        display: block;
+        right: 10px;
+        top: 14px;
+        padding: 5px;
+        cursor: pointer;
+        @include transition(all .2s ease-in-out);
+        &:after{
+            font-family: "fontawesome";
+            content: '\f00d';
+        }
+        &:hover{
+            background: rgba(#fff, .2);
+        }
+    }
+
+}
